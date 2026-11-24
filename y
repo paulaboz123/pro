@@ -1,17 +1,19 @@
-Wpisz po kolei:
-
 git checkout main
 git pull
 Expand-Archive -Force $HOME\Downloads\changed_files_109.zip .
-
-2. Dodaj tylko kod:
-
+Expand-Archive -Force $HOME\Downloads\changed_files_110.zip .
 git add README.md studio tests
 git status
-
-W „Changes to be committed” mają być tylko README.md i pliki z studio/ i tests/. Nie może tam być kb.tgz.
-
-3. Wyślij:
-
-git commit -m "Clara's changes: two tabs, clearer outputs, company look"
+git commit -m "Clara's changes"
 git push
+
+git checkout main
+git pull
+Expand-Archive -Force $HOME\Downloads\changed_files_111.zip .
+git add README.md studio tests
+git status
+git commit -m "Clara's changes and settings"
+git push
+
+git pull
+uv run --no-project python $HOME\Downloads\set_dev_image.py "WKLEJ_URI"
