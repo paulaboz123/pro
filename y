@@ -1,7 +1,4 @@
-Expand-Archive -Force $HOME\Downloads\changed_files_127.zip .
-git add README.md studio tests
-git commit -m "Translate German SCORM content and add a Data tab with topics and sources"
+Expand-Archive -Force $HOME\Downloads\changed_files_128.zip .
+git add studio tests
+git commit -m "Show translated sources in the Data tab on the server"
 git push
-uv run -m studio inventory
-uv run -m studio pipeline --mode all --vision
-uv run -m studio topics
